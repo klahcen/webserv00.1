@@ -53,7 +53,7 @@ int main() {
             "Content-Length: 13\r\n"
             "Connection: close\r\n"
             "\r\n"
-            "Hello,";
+            "Hello,sd";
 
         send(new_socket, http_response, strlen(http_response), 0);
         close(new_socket);
