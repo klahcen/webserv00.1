@@ -19,12 +19,12 @@ It supports multiple features such as:
 - Handling of **GET**, **POST**, and **DELETE** HTTP methods.
 - Support for **CGI** execution (e.g., PHP/Python).
 - **File upload**, **directory listing**, **error pages**, and **configuration-based routing**.
-- **Multiple ports** and **non-blocking I/O** using `poll()`.
+- **Multiple ports** and **non-blocking I/O** using `epoll()`.
 
 ## ⚙️ Features
 
 - C++98 compatible, written from scratch.
-- Non-blocking socket I/O using `poll()`.
+- Non-blocking socket I/O using `epoll()`.
 - Static file serving (HTML, CSS, JS, etc.).
 - Configurable via custom `.conf` files (inspired by NGINX).
 - CGI execution (for dynamic content).
