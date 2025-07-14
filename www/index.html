@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page with Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            width: 100%;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .content {
+            margin-top: 300px;
+            font-size: 32px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .team-section {
+            margin-top: 50px;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+        .separator {
+            width: 80%;
+            height: 2px;
+            background-color: white;
+            margin: 20px auto;
+        }
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 20px;
+        }
+        .member {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 250px;
+        }
+        .member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .member a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="/get">Get</a>
+        <a href="/post">Post</a>
+        <a href="/delete">Delete</a>
+        <a href="/cgi">CGI</a>
+        <a href="/cookie">Cookies</a>
+        <a href="/login" class="link">Login</a>
+    </div>
+    <div class="content">
+        <h1>Welcome to our webserver</h1>
+    </div>
+    <div class="team-section">
+        <div class="separator"></div>
+        <h2>Meet Our Team</h2>
+        <div class="team">
+            <div class="member">
+                <img src="image/lkazaz.jpeg" alt="Lahcen Kazaz">
+                <h3>Lahcen Kazaz</h3>
+                <a href="https://github.com/klahcen" target="_blank">GitHub: klahcen</a>
+                <a href="https://profile.intra.42.fr/users/lkazaz" target="_blank">Intra: lkazaz</a>
+            </div>
+            <div class="member">
+                <img src="image/akaddour.jpeg" alt="Amine Kaddouri">
+                <h3>Amine Kaddouri</h3>
+                <a href="https://github.com/Aminekaddouri" target="_blank">GitHub: Aminekaddouri</a>
+                <a href="https://profile.intra.42.fr/users/akaddour" target="_blank">Intra: akaddour</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
