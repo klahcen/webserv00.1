@@ -28,14 +28,17 @@ It supports multiple features such as:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/klahcen/webserv.git
+git clone git@github.com:klahcen/webserv00.1.git
 ```
+### 2. Navigate to the project directory
 ```bach
-cd webserv
+cd webserv00.1
 ```
+### 3. Compile the project
 ```bach
 make
 ```
+### 4. Run the server with a configuration file
 ```bach
 ./webserv configs/multiserver.conf
 ```
